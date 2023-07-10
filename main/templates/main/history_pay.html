@@ -1,0 +1,29 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/history_pay.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/menu.css' %}">
+{% endblock %}
+
+{% block title %}
+    history pay igRa
+{% endblock %}
+{% block content %}
+    {% include 'main/menu.html' %}
+
+    <h1 class="history__pay_text">История</h1>
+
+    <div style="border: solid red 1.5px;" class="history_container">
+        <h2 class="sender_name">Отправитель</h2>
+        <h2 class="sender_sum">0.200 РА</h2>
+    </div>
+    <div style="border: solid rgb(153, 255, 0) 1.5px;" class="history_container">
+        <h2 class="sender_name">Отправитель</h2>
+        <h2 class="sender_sum">0.200 РА</h2>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'main/js/history_pay.js' %}"></script>
+{% endblock %}

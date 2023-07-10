@@ -1,0 +1,31 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/reg.css' %}">
+{% endblock %}
+
+{% block title %}
+    igRa
+{% endblock %}
+
+{% block content %}
+    <img  class="logo__ladia" src="{% static 'main/img/ladia.png' %}" alt="">
+    <form action="">
+        <div class="horizontal_but">
+            <input style="margin: 0;" class="padding_Input input_text" type="text" placeholder="+79250000000">
+            <!-- <input style="margin: 0;" class="padding_Input input_but" type="button" value="Код"> -->
+            <label class="container">
+                
+                <input checked="checked" type="checkbox">
+                <div class="checkmark"></div>
+            </label>
+        </div>
+        <input class="padding_Input input_code input_text" type="text" placeholder="код">
+        <input class="padding_Input input_but" type="button" value="Войти">
+    </form>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'main/js/reg.js' %}"></script>
+{% endblock %}

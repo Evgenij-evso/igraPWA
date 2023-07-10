@@ -1,0 +1,43 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/acc.css' %}">
+{% endblock %}
+
+{% block title %}
+    igRa
+{% endblock %}
+
+{% block content %}
+    {% include 'main/menu.html' %}
+    <!-- <img  class="logo__ladia" src="../img/ladia.png" alt=""> -->
+    <main>
+
+        <div style="margin-right: 0; margin-left: auto;" class="ra_text_container">
+            <span style="color: rgb(0, 122, 187);" class="num_ra">0.000</span>
+
+        </div>
+        <div class="ra_text_container">
+            <span style="color: rgb(197, 22, 100);" class="num_ra">0.000</span>
+            <span class="text_ra">РА</span>
+        </div>
+    </main>
+
+    <div class="face_container">
+        <span class="text_face">ЛИК</span>
+    </div>
+    <span class="text"> ФИО</span>
+    <span style="margin-top: 5%;font-size: 1.75em;" class="text">Предлагаю</span>
+
+    <input class="text_input" placeholder="Товары /Услуги" type="text" name="">
+    <input class="text_input" placeholder="Ссылки" type="text" name="">
+    <input class="text_input" placeholder="Мой проэкт" type="text" name="">
+
+    
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'main/js/acc.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/fond.css' %}">
+{% endblock %}
+
+{% block title %}
+    fond igRa
+{% endblock %}
+
+{% block content %}
+    {% include 'main/menu.html' %}
+    <h1 class="history__pay_text">Фонд</h1>
+    {% if form %}
+        {% for el in form %}
+            <div class="container_candidate">
+                <div class="Horizontal_container">
+                    <div class="personal_data vertical_container">
+                        <span class="name">{{ el.fio }}</span>
+                        <span class="job_title">{{ el.job_title }}</span>
+                    </div>
+                    <span class="coin_ra">{{ el.summ }} РА</span>
+                </div>
+                <div style="margin-top: 2.5%;" class="vertical_container ">
+                    <a href="{{ el.url_progect }}" class="link_to_progect">{{ el.url_progect }}</a>
+
+                    <div class="quiz Horizontal_container">
+                        <span class="quiz_voice">Голосов 0 из 1</span>
+                        <img class="like" src="{% static 'main/img/like.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h1>Тут нет проектов</h1>
+    {% endif %}
+    
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'main/js/fond.js' %}"></script>
+{% endblock %}

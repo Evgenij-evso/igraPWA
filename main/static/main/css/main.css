@@ -1,0 +1,16 @@
+*{
+
+    font-family: 'CyrillicOld', arial;
+
+}
+@font-face {
+    font-family: 'CyrillicOld'; 
+    src: url(../fonts/C.ttf); 
+}
+
+body{
+    background-color: #6189b5;
+    background-image: linear-gradient(0deg, #6189b5 0%, #a7ffff 33%, #f4ffcc 66%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}

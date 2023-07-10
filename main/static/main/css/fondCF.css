@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+}
+form{
+    height: 50vh;
+    width: 75vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 5px 0px;
+    
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: solid black 1px;
+    font-size: 1.7em;
+}
+
+label{
+    font-size: 1.7em;
+}
+.horizontal{
+    display: flex;
+}
+#money{
+    width: 100px;
+}
+[type="submit"]{
+    border: 0;
+    padding: 5px 20px;
+
+    background-image: linear-gradient( 90.2deg,  rgba(79,255,255,1) 0.3%, rgba(0,213,255,1) 99.8% );
+    border-radius: 2px;
+}
+[type="submit"]:hover{
+    border: 0;
+    padding: 5px 20px;
+
+    filter: brightness(90%);
+    border-radius: 2px;
+}

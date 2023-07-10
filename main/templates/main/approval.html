@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/approval.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    Approval igra
+{% endblock %}
+
+{% block content %}
+    
+    <p class="social__p" style="color: black">
+
+        Договор о намерениях <br>
+        "ПРИСЯГА"<br><br>
+        Я,<input class="inp_F inp_Fio" type="text" placeholder="Фамилия"> <input class="inp_I inp_Fio" type="text" placeholder="Имя"> <input class="inp_O inp_Fio" type="text" placeholder="Отчество"> становясь участником обмена созидательной энергией в коллективе "IgRA", понимаю, что могу приобретать услуги и товары в обмен на "Ра". Так же принимаю на себя обязанность отдавать услуги или часть услуг, свои товары (частично или полностью ассоциировать эти товары) в обмен на "Ра". всем участникам системы взаимоотношений "IgRA".<br>
+        Я намереваюсь давать и брать Ресурсные Активы (РА) как математический подсчет в алгоритме формул, не считать это валютой и не сравнивать с казначейскими билетами или ценными активами и бумагами.  <br>
+        Мне интересно играть и я заинтересован взаимодействовать со всеми участниками системы "IgRA" добровольно.<br>
+    </p>
+    <div class="lad_horizontal_cont">
+        <span class="text__lad">Лад</span>
+        <label class="container">
+                
+            <input checked="checked" type="checkbox">
+            <div class="checkmark"></div>
+        </label>
+    </div>
+    <button class="But_SingUp">
+        Button
+    </button>
+    <img class="logo__ladia" src="{% static 'main/img/ladia.png' %}" alt="">
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'main/js/approval.js' %}"></script>
+{% endblock %}
+

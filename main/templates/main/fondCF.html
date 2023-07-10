@@ -1,0 +1,39 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/fondCF.css' %}">
+{% endblock %}
+
+{% block title %}
+    fond create igRa
+{% endblock %}
+
+{% block content %}
+    
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.fio }}<br>
+        {{ form.job_title }}<br>
+        {{ form.url_progect }}<br>
+
+        {{ form.summ }}
+        
+        <!-- <input type="text" id="Fio" placeholder="ФИО"><br>
+        <input type="text" id="job" placeholder="Работа"><br>
+        <input type="url" id="url_project" placeholder="Сылка на проэкт"><br>
+        <div class="horizontal">
+            <label for="">Деньги:</label>
+            <input placeholder="0.000" step="0.001" min="0" type="number" id="money" class="money">
+        </div> -->
+        <span>{{ error }}</span>
+        <input value="Опубликовать" type="submit" id="sub">
+        
+    </form>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'main/js/fondCF.js' %}"></script>
+{% endblock %}
