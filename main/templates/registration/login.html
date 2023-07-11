@@ -11,9 +11,10 @@
 
 {% block content %}
     <img  class="logo__ladia" src="{% static 'main/img/ladia.png' %}" alt="">
-    <form action="">
+    <form method="post">
+        {% csrf_token %}
         <div class="horizontal_but">
-            <input style="margin: 0;" class="padding_Input input_text" type="text" placeholder="+79250000000">
+            <input name="username" style="margin: 0;" class="padding_Input input_text" type="text" placeholder="Name">
             <!-- <input style="margin: 0;" class="padding_Input input_but" type="button" value="Код"> -->
             <label class="container">
                 
@@ -21,8 +22,9 @@
                 <div class="checkmark"></div>
             </label>
         </div>
-        <input class="padding_Input input_code input_text" type="text" placeholder="код">
-        <input class="padding_Input input_but" type="button" value="Войти">
+        <input class="padding_Input input_code input_text" name="password" type="password" placeholder="Password">
+        {{ form.error }}
+        <input class="padding_Input input_but" type="submit" value="Войти">
     </form>
 {% endblock %}
 
