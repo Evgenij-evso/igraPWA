@@ -12,7 +12,3 @@ def approval(request):
 
 def history_pay(request):
     return render(request,'main/history_pay.html')
-
-@login_required
-def profile_view(request):
-    return render(request, 'main/acc.html')
