@@ -13,6 +13,11 @@ body{
   align-items: center;
 } 
 
+.Hor{
+  width: 50%;
+  display: flex;
+  justify-content: center;align-items: center;
+}
 /* Burger_menu */
 
 .navbar{
@@ -131,4 +136,9 @@ font-size: 0.9em;
 .job_title{
 font-size: 0.8em;
 color: gray;
+}
+.add_form_but{
+  padding: 10px 20px;
+
+  background: #aed7fa;
 }
