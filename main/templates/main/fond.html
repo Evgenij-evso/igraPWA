@@ -13,7 +13,7 @@
     {% include 'main/menu.html' %}
     <div class="Hor">
         <h1 class="history__pay_text">Фонд</h1>
-        <a class="add_form_but" href="{% url 'createfond' %}">Создать проэкт</a>
+        <a class="add_form_but" href="{% url 'createfond' %}">Создать проект</a>
     </div>
     {% if form %}
         {% for el in form %}
@@ -36,7 +36,7 @@
             </div>
         {% endfor %}
     {% else %}
-        <h1>Тут нет проэктов</h1>
+        <h1>Тут нет проектов</h1>
     {% endif %}
     
 

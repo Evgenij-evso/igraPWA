@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/search.css' %}">
+{% endblock %}
+
+{% block title %}
+    contact igRa
+{% endblock %}
+{% block content %}
+    {% include 'main/menu.html' %}
+    <input placeholder="Поиск" class="SearchInput" type="text">
+
+    <div class="card">
+        <img class="img_avatar" src="{% static 'main/img/3935.jpg' %}" alt="">
+        <div class="vertical">
+            <span class="span_name">Имя</span>
+            <span class="span_job">Работа</span>
+        </div>
+    </div>
+
+{% endblock %}

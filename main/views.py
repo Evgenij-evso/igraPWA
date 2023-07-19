@@ -12,3 +12,11 @@ def approval(request):
 
 def history_pay(request):
     return render(request,'main/history_pay.html')
+def acc(request):
+    return render(request,'main/acc.html')
+
+def contact(request):
+    return render(request,'main/contact.html')
+
+def search(request):
+    return render(request,'main/search.html')

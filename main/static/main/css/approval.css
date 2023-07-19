@@ -28,7 +28,7 @@ body{
   display: flex;
 }
 .But_SingUp{
-  background-color: #6189b5;
+  background-color: rgba(0, 0, 0, 0);
   margin-top: 20px;
   border-radius: 5px;
   font-size: 3em;

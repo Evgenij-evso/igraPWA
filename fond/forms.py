@@ -15,7 +15,7 @@ class FormForm(ModelForm):
                 'placeholder': 'Работа'
             }),
             'url_progect': TextInput(attrs={
-                'placeholder': 'Сылка на проэкт'
+                'placeholder': 'Ссылка на проект'
             }),
             'summ': NumberInput(attrs={
                 'placeholder': 'Стоимость',

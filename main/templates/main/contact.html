@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/contact.css' %}">
+{% endblock %}
+
+{% block title %}
+    contact igRa
+{% endblock %}
+{% block content %}
+    {% include 'main/menu.html' %}
+    
+    <h1>Контакты</h1>
+
+{% endblock %}

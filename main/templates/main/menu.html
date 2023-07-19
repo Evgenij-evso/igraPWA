@@ -7,10 +7,11 @@
 </div>
 <div class="navbar">
     <div class="menu-items">
-        <li class="menu_item"><a class="link_menu" href="">Поиск</a></li>
+        <li class="menu_item"><a class="link_menu" href="{% url 'search' %}">Поиск</a></li>
         <li class="menu_item"><a class="link_menu" href="{% url 'fond' %}">Фонд</a></li>
-        <li class="menu_item"><a class="link_menu" href="{% url 'home' %}">IgRA</a></li>
         <li class="menu_item"><a class="link_menu" href="{% url 'history_pay' %}">История</a></li>
-        <li class="menu_item"><a class="link_menu" href="">Контакты</a></li>
+        <li class="menu_item"><a class="link_menu" href="{% url 'approval' %}">Присяга</a></li>
+        <li class="menu_item"><a class="link_menu" href="{% url 'home' %}">IgRA</a></li>
+        <li class="menu_item"><a class="link_menu" href="{% url 'contact' %}">Контакты</a></li>
     </div>
 </div>

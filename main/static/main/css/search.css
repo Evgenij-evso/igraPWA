@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #6189b5;
+    background-image: linear-gradient(0deg, #6189b5 0%, #a7ffff 33%, #f4ffcc 66%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SearchInput{
+    width: 100%;
+    padding: 24px 0;
+
+    font-size: 1.75em;
+    border: 0;
+    border-bottom: solid black 1px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+.card{
+    width: 80%;
+    height: 10%;
+
+    box-sizing: border-box;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    margin: 15px;
+    border: solid black 1px;
+
+    display: flex;
+}
+.img_avatar{
+    height: 100%;
+    border-radius: 10px;
+}
+.vertical{
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 0.5rem;
+
+}
+.burger__menu__button{
+    right: auto;
+    left: 0;
+    }
+.span_name{
+    font-size: 1.7em;
+}
+.span_job{
+    font-size: 1.5em;
+    color: #777777;
+}
